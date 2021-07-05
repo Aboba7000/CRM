@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/searchClients"
+        android:icon="@drawable/baseline_search_white_24dp"
+        android:title="@string/search"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/baseline_sort_white_24dp"
+        android:title="@string/sort"
+        app:showAsAction="always">
+        <menu>
+
+                <item
+                    android:orderInCategory="100"
+                    android:title="По ID"
+                    app:showAsAction="never">
+                    <menu>
+                        <group android:checkableBehavior="single">
+                            <item
+                                android:id="@+id/sortByIDCDown"
+                                android:orderInCategory="100"
+                                android:title="По ID ↓"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/sortByIDCUp"
+                                android:orderInCategory="100"
+                                android:title="По ID ↑"
+                                app:showAsAction="never" />
+                        </group>
+                    </menu>
+                </item>
+
+                <item
+                    android:orderInCategory="100"
+                    android:title="По наименованию"
+                    app:showAsAction="never" >
+                    <menu>
+                        <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/sortByName"
+                            android:orderInCategory="100"
+                            android:title="А-Я"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/sortByNameDesc"
+                            android:orderInCategory="100"
+                            android:title="Я-А"
+
+                            app:showAsAction="never" />
+                        </group>
+                    </menu>
+                </item>
+
+                <item
+                    android:orderInCategory="100"
+                    android:title="По дате"
+                    app:showAsAction="never" >
+
+                    <menu>
+                        <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/sortByDateUp"
+                            android:orderInCategory="100"
+                            android:title="По дате ↑"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/sortByDateDown"
+                            android:orderInCategory="100"
+                            android:title="По дате ↓"
+                            app:showAsAction="never" />
+                        </group>
+                    </menu>
+                    </item>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sortByTypeIP"
+                    android:orderInCategory="100"
+                    android:title="ИП"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/sortByTypeUr"
+                    android:orderInCategory="100"
+                    android:title="Юр. лица"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/sortByFav"
+                    android:orderInCategory="100"
+                    android:title="Избранные"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+        </item>
+
+
+    <item
+        android:id="@+id/addClient"
+        android:icon="@drawable/baseline_person_add_white_24dp"
+        android:title="@string/addClient"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/refreshClients"
+        android:title="@string/Refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/optionsClinets"
+        android:icon="@drawable/outline_update_white_36"
+        android:title="@string/options"
+        app:showAsAction="ifRoom" />
+
+
+
+
+
+</menu>

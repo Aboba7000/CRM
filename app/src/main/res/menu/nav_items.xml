@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_clients"
+        android:icon="@drawable/baseline_person_search_white_24dp"
+        android:title="@string/nav_clients" />
+    <item
+        android:id="@+id/item_history"
+        android:icon="@drawable/baseline_history_white_24dp"
+        android:title="@string/nav_history" />
+    <item
+        android:id="@+id/item_reports"
+        android:icon="@drawable/baseline_analytics_white_24dp"
+        android:title="@string/nav_reports" />
+</menu>

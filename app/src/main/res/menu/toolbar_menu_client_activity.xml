@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/email"
+        android:icon="@drawable/outline_email_white_36"
+
+        android:title="@string/search"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/outline_call_white_36"
+        android:title=""
+        app:showAsAction="always" >
+        <menu>
+            <item
+                android:id="@+id/phone"
+                android:title="Звонок"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sms"
+                android:title="Отправить sms"
+                app:showAsAction="never" />
+
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/addFavorite"
+        android:title="@string/addClient"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/addEvents"
+        android:title="@string/add_event"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/showEvents"
+        android:title="@string/show_client_events"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/hideEvents"
+        android:title="@string/hide_clients_events"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/showOrders"
+        android:title="@string/find_client_orders"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/hideOrders"
+        android:title="@string/hide_client_orders"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addEmail"
+        android:title="@string/add_email"
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item
+        android:id="@+id/addPhone"
+        android:title="@string/add_phone"
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item
+        android:id="@+id/addPay"
+        android:title="@string/add_pay"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delClient"
+        android:title="@string/del_client"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/optionsClient"
+        android:title="@string/options"
+        app:showAsAction="never" />
+
+
+
+
+</menu>

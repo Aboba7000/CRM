@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/outline_date_range_white_24"
+        android:title="@string/search"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/baseline_sort_white_24dp"
+        android:title="@string/sort"
+        app:showAsAction="always">
+        <menu>
+
+                <item
+                    android:orderInCategory="100"
+                    android:title="По ID"
+                    app:showAsAction="never" >
+                    <menu>
+                        <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/sortByIDHDown"
+                            android:orderInCategory="100"
+                            android:title="По ID ↓"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/sortByIDHUp"
+                            android:orderInCategory="100"
+                            android:title="По ID ↑"
+                            app:showAsAction="never" />
+                        </group>
+                    </menu>
+                </item>
+
+                <item
+                    android:orderInCategory="100"
+                    android:title="По дате"
+                    app:showAsAction="never" >
+                    <menu>
+                        <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/sortByDateHistoryDown"
+                            android:orderInCategory="100"
+                            android:title="По дате ↓"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/sortByDateHistoryUp"
+                            android:orderInCategory="100"
+                            android:title="По дате ↑"
+                            app:showAsAction="never" />
+                        </group>
+                    </menu>
+                </item>
+
+
+
+        </menu>
+    </item>
+
+    
+    <item
+        android:id="@+id/refreshHistory"
+        android:title="@string/Refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/optionsHistory"
+        android:title="@string/options"
+        app:showAsAction="ifRoom" />
+
+
+
+
+
+
+</menu>

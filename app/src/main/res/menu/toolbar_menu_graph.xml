@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/graphCalendar"
+        android:icon="@drawable/outline_date_range_white_24"
+        app:showAsAction="always"
+        android:title="graphCalendar"/>
+    <item
+        android:icon="@drawable/baseline_list_white_36"
+        android:title="scale"
+        app:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/scaleDate"
+                    android:title="День" />
+                <item
+                    android:id="@+id/scaleMonth"
+                    android:title="Месяц"
+                    android:checked="true"/>
+                <item
+                    android:id="@+id/scaleYear"
+                    android:title="Год" />
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:icon="@drawable/outline_insights_white_36"
+        android:title="graphType"
+        app:showAsAction="always" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/lin"
+                    android:title="Линейный"
+                    android:checked="true"/>
+                <item
+                android:id="@+id/bar"
+                android:title="Гистограмма"/>
+            </group>
+        </menu>
+    </item>
+
+
+
+
+
+    <item
+        android:id="@+id/items"
+        android:title="@string/options"
+        app:showAsAction="never" />
+
+
+
+</menu>
